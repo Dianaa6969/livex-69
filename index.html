@@ -6,32 +6,34 @@
   <title>LIVE</title>
 
   <!-- ✅ Meta Aman Anti Blokir -->
-  <meta property="og:title" content="LIVE Video">
+  <meta property="og:title" content="XLIVE">
   <meta property="og:description" content="Tonton video langsung sekarang">
-  <meta property="og:image" content="https://i.imgur.com/QEUtgPZ.jpeg">
-  <link rel="icon" type="image/jpeg" href="https://i.imgur.com/QEUtgPZ.jpeg">
+  <meta property="og:image" content="https://i.imgur.com/jrwOLC6.jpeg">
+  <link rel="icon" type="image/jpeg" href="https://i.imgur.com/jrwOLC6.jpeg">
 
   <style>
     body {
       margin: 0;
       padding: 0;
       background-color: #000;
+      color: #fff;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      height: 100vh;
-      overflow: hidden;
+      justify-content: flex-start;
       font-family: Arial, sans-serif;
+      min-height: 100vh;
+      overflow-x: hidden;
     }
 
     h1 {
       color: red;
       font-size: 2.5em;
       font-weight: bold;
-      margin-bottom: 10px;
       text-transform: uppercase;
       animation: blink 1s infinite alternate;
+      margin-top: 15px;
+      margin-bottom: 10px;
     }
 
     @keyframes blink {
@@ -39,48 +41,180 @@
       to { opacity: 0.3; }
     }
 
-    video {
-      width: 95%;
+    .videos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+      width: 100%;
       max-width: 500px;
+      padding-bottom: 20px;
+    }
+
+    .video-container {
+      position: relative;
+      width: 95%;
+    }
+
+    video {
+      width: 100%;
       border-radius: 15px;
       cursor: pointer;
       box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
     }
 
+    .play-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 60px;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.4);
+      border-radius: 50%;
+      padding: 15px 25px;
+      cursor: pointer;
+      border: 2px solid white;
+      transition: all 0.3s ease;
+    }
+
+    .play-btn:hover {
+      background-color: rgba(255, 0, 0, 0.6);
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+
+    .ad-container {
+      margin-top: 10px;
+      text-align: center;
+    }
+
     footer {
       color: #777;
       font-size: 0.8em;
-      margin-top: 15px;
+      margin: 20px 0;
     }
   </style>
 </head>
 <body>
 
-  <h1>LIVE</h1>
+  <h1>XXX LIVE VIDEOS</h1>
 
-  <video id="myVideo" playsinline>
-    <source src="https://i.imgur.com/jQpdtJx.mp4" type="video/mp4">
-    Browser Anda tidak mendukung pemutar video.
-  </video>
+  <div class="videos">
+
+    <!-- VIDEO 1 -->
+    <div class="video-container">
+      <video id="vid1" playsinline>
+        <source src="https://i.imgur.com/vUnHR7w.mp4" type="video/mp4">
+      </video>
+      <div id="btn1" class="play-btn">▶</div>
+    </div>
+    <!-- 🔸IKLAN BAWAH VIDEO 1 -->
+    <div class="ad-container">
+      <script type="text/javascript">
+        atOptions = {
+          'key' : 'ec53827c9b81b0b08ea2bc7d1d014857',
+          'format' : 'iframe',
+          'height' : 90,
+          'width' : 728,
+          'params' : {}
+        };
+      </script>
+      <script type="text/javascript" src="//www.highperformanceformat.com/ec53827c9b81b0b08ea2bc7d1d014857/invoke.js"></script>
+    </div>
+
+    <!-- VIDEO 2 -->
+    <div class="video-container">
+      <video id="vid2" playsinline>
+        <source src="https://i.imgur.com/vUnHR7w.mp4" type="video/mp4">
+      </video>
+      <div id="btn2" class="play-btn">▶</div>
+    </div>
+    <!-- 🔸IKLAN BAWAH VIDEO 2 -->
+    <div class="ad-container">
+      <script type="text/javascript">
+        atOptions = {
+          'key' : 'a38d74742d4d07b7836aaf4ebc9ecbb7',
+          'format' : 'iframe',
+          'height' : 60,
+          'width' : 468,
+          'params' : {}
+        };
+      </script>
+      <script type="text/javascript" src="//www.highperformanceformat.com/a38d74742d4d07b7836aaf4ebc9ecbb7/invoke.js"></script>
+    </div>
+
+    <!-- VIDEO 3 -->
+    <div class="video-container">
+      <video id="vid3" playsinline>
+        <source src="https://i.imgur.com/vUnHR7w.mp4" type="video/mp4">
+      </video>
+      <div id="btn3" class="play-btn">▶</div>
+    </div>
+    <!-- 🔸IKLAN BAWAH VIDEO 3 -->
+    <div class="ad-container">
+      <script type="text/javascript">
+        atOptions = {
+          'key' : '94fc4e1fa54ae93a74566a054c388c02',
+          'format' : 'iframe',
+          'height' : 60,
+          'width' : 468,
+          'params' : {}
+        };
+      </script>
+      <script type="text/javascript" src="//www.highperformanceformat.com/94fc4e1fa54ae93a74566a054c388c02/invoke.js"></script>
+    </div>
+
+    <!-- VIDEO 4 -->
+    <div class="video-container">
+      <video id="vid4" playsinline>
+        <source src="https://i.imgur.com/vUnHR7w.mp4" type="video/mp4">
+      </video>
+      <div id="btn4" class="play-btn">▶</div>
+    </div>
+
+  </div>
 
   <footer>© 2025 LIVE Stream</footer>
 
   <script>
-    const video = document.getElementById('myVideo');
-    let firstClick = true;
+    const adLink = 'https://www.effectivegatecpm.com/wkj2qmku?key=469be1ba075a153196aae2fe5b0810c7';
 
-    video.addEventListener('click', () => {
-      if (firstClick) {
-        firstClick = false;
-        window.location.href = 'https://www.effectivegatecpm.com/wkj2qmku?key=469be1ba075a153196aae2fe5b0810c7';
-      } else {
-        if (video.paused) {
-          video.play();
+    function setupVideo(videoId, btnId) {
+      const video = document.getElementById(videoId);
+      const btn = document.getElementById(btnId);
+      let firstClick = true;
+
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (firstClick) {
+          firstClick = false;
+          window.location.href = adLink;
         } else {
-          video.pause();
+          btn.style.display = 'none';
+          video.play();
         }
-      }
-    });
+      });
+
+      video.addEventListener('click', () => {
+        if (!firstClick) {
+          if (video.paused) {
+            video.play();
+            btn.style.display = 'none';
+          } else {
+            video.pause();
+            btn.style.display = 'block';
+          }
+        }
+      });
+
+      video.addEventListener('play', () => btn.style.display = 'none');
+      video.addEventListener('pause', () => btn.style.display = 'block');
+    }
+
+    setupVideo('vid1', 'btn1');
+    setupVideo('vid2', 'btn2');
+    setupVideo('vid3', 'btn3');
+    setupVideo('vid4', 'btn4');
   </script>
 
 </body>
